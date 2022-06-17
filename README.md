@@ -8,3 +8,9 @@ Se pide:
 3. Un formulario para insertar datos a todas las clases de tu models
 4. Un formulario para buscar algo en la BD
 5. Readme que indique el orden eb el que se prueban las cosas y/o donde estan las funcionalidades.
+
+Se recomienda iniciar la navegacion por la ruta "/AppCoder/". La cual corresponde a la pagina de inicio. 
+Todas las funcionalidades son accesibles desde el nav bar. 
+Cada modelo tiene un formulario de creacion 
+Se pueden buscar por la edad que fueron creados los usuarios. 
+Todos los templates heredan el estilo de la pagina de inicio.
