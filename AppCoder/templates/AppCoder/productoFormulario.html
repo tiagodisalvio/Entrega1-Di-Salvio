@@ -1,0 +1,27 @@
+{% extends 'AppCoder/padre.html' %}
+{% load static %}
+
+
+{% block Titulos %}
+    <h1 class="display-5 fw-bolder text-white mb-2">Formulario para agregar productos</h1>
+
+    
+{% endblock %}
+    
+    
+{% block contenido %}    
+    
+    {% if ProductoFormulario.errors %}
+        <p style="color: crimson;">Están mal los datos. Revisar</p>
+    {% endif %}
+
+
+    <form action="/AppCoder/productoFormulario/" method="POST">{% csrf_token %}
+
+        {{miForm.as_p}}
+
+        <input type="submit" value="Agregar Producto">
+
+    </form>    
+    
+{% endblock contenido %}

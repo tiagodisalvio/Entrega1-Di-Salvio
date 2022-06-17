@@ -1,0 +1,26 @@
+{% extends 'AppCoder/padre.html' %}
+{% load static %}
+
+
+{% block Titulos %}
+    <h1 class="display-5 fw-bolder text-white mb-2">Formulario de creacion de usuario</h1>
+
+    
+{% endblock %}
+    
+    
+{% block contenido %}    
+
+    {% if UserFormulario.errors %}
+        <p style="color: crimson;">Están mal los datos. Revisar</p>
+    {% endif %}
+    
+    <form action="/AppCoder/userFormulario/" method="POST">{% csrf_token %}
+
+        {{miForm.as_p}}
+
+        <input type="submit" value="Crear Usuario">
+
+    </form>    
+    
+{% endblock contenido %}

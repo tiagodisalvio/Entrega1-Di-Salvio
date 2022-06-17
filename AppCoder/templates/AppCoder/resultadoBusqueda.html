@@ -1,0 +1,24 @@
+{% extends 'AppCoder/padre.html' %}
+{% load static %}
+
+
+{% block Titulos %}
+
+    <h1 class="display-5 fw-bolder text-white mb-2">Se busco segun edad del usuario</h1>
+    
+{% endblock %}
+    
+    
+{% block contenido %}    
+    
+    <p>Los usuarios que tienen {{edad}} años son:</p>
+        <ul>
+            {% for persona in users %}
+
+            <li>{{persona}}</li>
+
+            {% endfor %}
+        </ul>
+    
+        
+{% endblock contenido %}

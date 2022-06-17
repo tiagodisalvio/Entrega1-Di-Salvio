@@ -1,0 +1,30 @@
+{% extends 'AppCoder/padre.html' %}
+{% load static %}
+
+
+{% block Titulos %}
+
+    <h1 class="display-5 fw-bolder text-white mb-2">Ingrese la edad del usuario que desea buscar</h1>
+    
+{% endblock %}
+    
+    
+{% block contenido %}  
+
+    {% if respuesta %}
+
+        <p>{{respuesta}}</p>
+
+    {% endif %}
+          
+    
+        <form action="/AppCoder/buscar/" method="GET">
+
+            <input type="number" name="edad" id="edad">
+
+            <input type="submit" value="Buscar">
+
+        </form>    
+    
+        
+{% endblock contenido %}
