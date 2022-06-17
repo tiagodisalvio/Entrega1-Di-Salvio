@@ -1,8 +1,10 @@
 # Entrega1-Di Salvio
 
-Entrega 1 realizada por Di Salvio Tiago
+Entrega-1 realizada por Di Salvio Tiago
 
-recomiendo iniciar la navegacion por la ruta "/AppCoder/" que corresponde a la pagina de inicio.
-Todas las funcionalidades son accesibles desde el nav bar.
-Cada modelo tiene un formulario de creacion y se pueden buscar por edad los usuarios creados.
-todos los templates heredan el estilo de la pagina de inicio.
+Se pide:
+1. Herencia de HTML
+2. Por lo menos 3 clases en models
+3. Un formulario para insertar datos a todas las clases de tu models
+4. Un formulario para buscar algo en la BD
+5. Readme que indique el orden eb el que se prueban las cosas y/o donde estan las funcionalidades.
